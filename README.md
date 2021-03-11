@@ -12,7 +12,7 @@ This library is designed to be completely and easily interchangeable with the Go
 
 This library also offers *blazing fast convenience methods* that can be used as a clean, alternative interface to that provided by the Go standard library. (See [usage](#usage)).
 
-If you are after compressing whole-buffered data, you might also want to check out [this](https://github.com/4kills/go-libdeflate) library here. 
+If you are after compressing whole-buffered data, you might also want to check out [this](https://github.com/blueslimee/go-libdeflate) library here. 
 
 ## Table of Contents
 
@@ -61,7 +61,7 @@ off of MinGW. Please note that [cgo](https://golang.org/cmd/cgo/) requires the 6
 To get the most recent stable version just type: 
 
 ```shell script 
-$ go get github.com/4kills/go-zlib
+$ go get github.com/blueslimee/go-zlib
 ```
 
 You may also use Go modules (available since Go 1.11) to get the version of a specific branch or tag if you want to try out or use experimental features. However, beware that these versions are not necessarily guaranteed to be stable or thoroughly tested.
@@ -77,7 +77,7 @@ Just remove:
 and use instead: 
  
 ```go
-import "github.com/4kills/go-zlib"
+import "github.com/blueslimee/go-zlib"
 ```
 
 If there are any problems with your existing code after this step, please let me know. 
@@ -159,7 +159,7 @@ These benchmarks compare this library (blue) to the Go standard library (yellow)
   
     <summary> (A note regarding testing on your machine) </summary>
   
-    Please note that you will need an Internet connection for some benchmarks to function. This is because these benchmarks will download the mc packets from [here](https://github.com/4kills/zlib_benchmark) and temporarily store them in memory for the duration of the benchmark tests, so this repository won't have to include the data in order save space on your machine and to make it a lightweight library.
+    Please note that you will need an Internet connection for some benchmarks to function. This is because these benchmarks will download the mc packets from [here](https://github.com/blueslimee/zlib_benchmark) and temporarily store them in memory for the duration of the benchmark tests, so this repository won't have to include the data in order save space on your machine and to make it a lightweight library.
   
   </details>
 
