@@ -1,3 +1,3 @@
-module github.com/4kills/go-zlib
+module github.com/blueslimee/go-zlib
 
-go 1.13
+go 1.16
